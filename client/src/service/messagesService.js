@@ -1,5 +1,5 @@
 import Axios from "axios";
-
+const port = process.env.PORT || 5000
 const API_CALLS = {}
 API_CALLS.create_message = async (data) => {
     const obj = {
@@ -8,11 +8,11 @@ API_CALLS.create_message = async (data) => {
         message: data.formState[2].value,
         subject: data.formState[3].value
     }
-    return await Axios.post('http://localhost:3005/api/messages', obj)
+    return await Axios.post('http://localhost:'+port+'/api/messages', obj)
 }
 
 API_CALLS.get_all_messages = async (data) => {
-    return await Axios.get('http://localhost:3005/api/messages')
+    return await Axios.get('http://localhost:'+port+'/api/messages')
 }
 
 export default API_CALLS
