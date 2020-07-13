@@ -2,7 +2,7 @@
 
 ## Introduction
 
-> This small project is built with React + Redux + Sagas on client, Nodejs + Express + Mongoose on the backend
+> This small project is built with React + Router + Redux + Sagas on client, Nodejs + Express + Mongoose on the backend
 
 ## Code Samples
 
