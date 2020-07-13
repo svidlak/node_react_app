@@ -1,5 +1,5 @@
 import Axios from "axios";
-const BASE_URL = window.location.origin || 5000
+const BASE_URL = window.location.origin.includes('heroku') ? window.location.origin : 'http://localhost:5000'
 const API_CALLS = {}
 API_CALLS.create_message = async (data) => {
     const obj = {
