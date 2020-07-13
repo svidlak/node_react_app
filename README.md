@@ -4,10 +4,6 @@
 
 > This small project is built with React + Router + Redux + Sagas on client, Nodejs + Express + Mongoose on the backend
 
-## Code Samples
-
-
-
 ## Installation
 
 > Howto install DEV env:
