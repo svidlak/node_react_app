@@ -1,5 +1,5 @@
-web: cd client/
-web: npm install/
-web: npm run-script build
-web: cd ../
-web npm start
+cd client/
+npm install
+npm run-script build
+cd ../
+web: npm start
